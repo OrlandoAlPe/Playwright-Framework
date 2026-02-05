@@ -1,0 +1,26 @@
+{
+    "Orlando": {
+        "firstName": "Orlando",
+        "lastName": "Alvarez",
+        "email": "orlando@test.com",
+        "gender": "Male",
+        "mobile": "9999999999",
+        "subjects": [
+            "Computer Science",
+            "Arts"
+        ],
+        "hobbies": [
+            "Sports",
+            "Music"
+        ],
+        "birthDay": {
+            "month": "June",
+            "day": "24",
+            "year": "1997"
+        },
+        "address": "Test Address 123",
+        "state": "NCR",
+        "city": "Delhi",
+        "fileName": "avatar.png"
+    }
+}

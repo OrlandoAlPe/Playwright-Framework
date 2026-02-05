@@ -1,0 +1,8 @@
+{
+  "defaultValues": {
+    "fullName": "Orlando Alvarez Peregrina",
+    "email": "orlando@test.com",
+    "currentAddress": "Calle Falsa 123",
+    "permanentAddress": "Av. Principal 456"
+  }
+}

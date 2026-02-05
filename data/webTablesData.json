@@ -1,0 +1,36 @@
+{
+  "Juan": {
+    "firstName": "Juan",
+    "lastName":"Perez",
+    "email": "juan@test.com",
+    "age": "30",
+    "salary": "50000",
+    "department" : "QA"
+  },
+
+   "Carlos": {
+    "firstName": "Carlos",
+    "lastName":"Mejia",
+    "email": "sonia@test.com",
+    "age": "28",
+    "salary": "60000",
+    "department" : "QA"
+  },
+  
+   "Cierra": {
+    "firstName": "Cierra",
+    "lastName":"Vega",
+    "email": "cierra@test.com",
+    "age": "32",
+    "salary": "75000",
+    "department" : "Lead"
+  },
+    "Kierra": {
+    "firstName": "Kierra",
+    "lastName":"Gentry",
+    "email": "kierra@example.coM",
+    "age": "29",
+    "salary": "2000",
+    "department" : "Legal"
+  }
+}
