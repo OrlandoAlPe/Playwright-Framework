@@ -27,13 +27,17 @@ This project is a high-level automation framework built with Playwright and Type
 ---
 <h1>🧩 Challenges & Solutions</h1>
 
-+ Complex Drag & Drop LogicIn the Droppable module
++ <h4>Complex Drag & Drop LogicIn the Droppable module</h4>
+
   + Encountered issues where overlapping elements or UI states blocked interactions. I implemented a low-level Mouse API solution to clear the workspace before performing critical actions, ensuring 100% test reliability.
-+ Async State ManagementFor the Progress Bar and Dynamic Properties
++ <h4>Async State ManagementFor the Progress Bar and Dynamic Properties</h4>
+
   + Moved away from fixed timeouts. Instead, I utilized State-based Waiting (e.g., waiting for a specific button state or attribute change), which significantly reduced execution time.
-+ Iframe & Tooltip Handling
++ <h4>Iframe & Tooltip Handling</h4>
+
   + Successfully managed Nested Iframes by chaining frameLocators and resolved tooltip "Strict Mode" violations by forcing mouse coordinates to $(0,0)$ to reset hover states between assertions.
-+ CI/CD Stability  
++ <h4>CI/CD Stability</h4>
+
   + Configured GitHub Actions to run in headless mode with a single worker to prevent resource contention on DemoQA’s server, ensuring consistent results in cloud environments.
 
 ---
@@ -101,29 +105,43 @@ Playwright/
 
 ---
 <h1>⚙️ Setup & Execution </h1>
-Clone the repository:
+
+<h3>Clone the repository:</h3>
 
 ```
 git clone https://github.com/OrlandoAlPe/Playwright-Framework/
 ```
 
 
-Install dependencies:
+<h3>Install dependencies:</h3>
+
 ```
 npm install
 ```
 
 
-Run all tests:
+<h3>Run all tests:</h3>
+
 ```
 npx playwright test
 ```
 
 
-View Test Report:
+<h3>View Test Report:</h3>
+
 ```
 npx playwright show-report
 ```
+
+
+<h3>Continuous Integration:</h3> 
+
+```
+Tests run automatically on every push to the main branch.
+You can find the execution history and downloadable HTML Reports in the Actions tab
+```
+
+
 ---
 <h1>👤 Contact</h1>
 Orlando Álvarez
