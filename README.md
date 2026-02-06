@@ -4,6 +4,7 @@ This project is a high-level automation framework built with Playwright and Type
 ![TypeScript](https://img.shields.io/badge/%20-TypeScript-gray?logo=tsnode)
 ![npm](https://img.shields.io/badge/%20-NPM-gray?logo=npm)
 ![Playwright](https://img.shields.io/badge/Playwright-gray?logo=producthunt)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-gray?logo=githubactions)
 
 ---
 <h1>🚀 Key FeaturesDesign Pattern: </h1>
@@ -20,6 +21,8 @@ This project is a high-level automation framework built with Playwright and Type
 + Language: TypeScript
 + Test Runner: Playwright
 + Reporter: Playwright HTML Reporter
++ CI/CD: GitHub Actions
++ Continuous Integration: Automated test execution via GitHub Actions with artifact reporting.
 
 ---
 <h1>🧩 Challenges & Solutions</h1>
@@ -30,6 +33,8 @@ This project is a high-level automation framework built with Playwright and Type
   + Moved away from fixed timeouts. Instead, I utilized State-based Waiting (e.g., waiting for a specific button state or attribute change), which significantly reduced execution time.
 + Iframe & Tooltip Handling
   + Successfully managed Nested Iframes by chaining frameLocators and resolved tooltip "Strict Mode" violations by forcing mouse coordinates to $(0,0)$ to reset hover states between assertions.
++ CI/CD Stability  
+  + Configured GitHub Actions to run in headless mode with a single worker to prevent resource contention on DemoQA’s server, ensuring consistent results in cloud environments.
 
 ---
 <h1>📂 Project Structure</h1>
@@ -125,11 +130,9 @@ Orlando Álvarez
 
 - 📧 Email: orlandoalpe97@gmail.com
 - 💼 LinkedIn: https://www.linkedin.com/in/orlando-%C3%A1lvarez-peregrina-b27398181/
-- 🐙 GitHub: https://github.com/OrlandoAlPe
 - 📍 Location: Aguascalientes, México
 
 📄 License
 This project is open source and available under the MIT License.
 
-⭐ If you find this project useful, please consider giving it a star!
 Built with ❤️ for learning and demonstrating QA Automation skills
