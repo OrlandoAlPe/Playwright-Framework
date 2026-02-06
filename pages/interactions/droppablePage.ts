@@ -44,6 +44,8 @@ export class DroppablePage extends BasePage {
         await this.page.mouse.down();
         await this.page.mouse.move(0, 0);
         await this.page.mouse.up();
+        await this.page.mouse.down();
+        await this.page.mouse.up();
         await this.acceptableButton.dragTo(this.acceptDropHereBox);
         await expect(this.acceptDropHereTitle).toHaveText("Dropped!");
     }

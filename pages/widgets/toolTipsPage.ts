@@ -21,13 +21,13 @@ export class ToolTipsPage extends BasePage {
     }
 
     private async hoverElementAndVerifyText(element: Locator, message: string) {
-        await expect(element).toBeVisible();
         await element.scrollIntoViewIfNeeded();
-        await element.hover();
-        await expect(this.hoverText).toBeVisible();
+        await expect(element).toBeVisible();
+        await element.dispatchEvent('mouseover');
+        await expect(this.hoverText).toBeVisible({ timeout: 5000 });
         await expect(this.hoverText).toHaveText(message);
-        await this.page.mouse.move(0, 0);
-        await this.hoverText.waitFor({ state: "hidden" });
+        await element.dispatchEvent('mouseout');
+        await this.hoverText.waitFor({ state: "hidden", timeout: 5000 });
     }
 
     public async hoverButtonAndVerifyText() {

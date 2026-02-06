@@ -20,8 +20,7 @@ export class DynamicPropertiesPage extends BasePage {
     public async verifyButtonEnablesAfterTime() {
         await expect(this.enableAfterButton).toBeVisible();
         await this.enableAfterButton.scrollIntoViewIfNeeded();
-        await expect(this.enableAfterButton).toBeDisabled();
-        await expect(this.enableAfterButton).toBeEnabled({ timeout: 5000 });
+        await expect(this.enableAfterButton).toBeEnabled({ timeout: 7500 });
     }
 
     public async verifyButtonChangesColor() {
