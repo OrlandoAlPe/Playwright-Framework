@@ -8,8 +8,8 @@ export class CheckBoxPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.notesCheckbox = page.locator("//span[text()='Notes']/../span[@class='rct-checkbox']");
-        this.expandButtons = page.getByLabel('Toggle');
+        this.notesCheckbox = page.getByLabel("Select Notes");
+        this.expandButtons = page.locator('//span[contains(@class,"rc-tree-switcher_")]');
     }
 
    public async navigateCheckBoxPage() {

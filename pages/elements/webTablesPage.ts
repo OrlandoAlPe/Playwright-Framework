@@ -78,7 +78,7 @@ export class WebTablesPage extends BasePage {
     private async verifyEmployeeInTable(employeeData: any) {
         const valuesToVerify = Object.values(employeeData);
         for (const value of valuesToVerify) {
-            const element = await this.page.getByRole("gridcell", { name: String(value), exact: true }).nth(0);
+            const element = await this.page.getByText(value as string, { exact: true }).first();
             await expect(element).toBeVisible();
         }
     }

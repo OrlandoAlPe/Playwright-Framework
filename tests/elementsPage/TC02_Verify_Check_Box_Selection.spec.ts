@@ -7,7 +7,6 @@ test('Verify Check Box Selection', async ({ checkBoxPage }) => {
         await checkBoxPage.navigateCheckBoxPage();
     });
 
-
     await test.step('Expand "Home" folder, Expand "Desktop" folder and Select "Notes" checkbox', async () => {
         await checkBoxPage.expandFolder(0);
         await checkBoxPage.expandFolder(1);

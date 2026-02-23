@@ -30,7 +30,7 @@ export class DroppablePage extends BasePage {
 
     public async executeSimpleDragAndDrop() {
         await this.navigateDroppablePage();
-        await this.dragMeButton.dragTo(this.simpleDropHereBox);
+        await this.dragMeButton.dragTo(this.simpleDropHereBox.first());
         await expect(this.simpleDropHereTitle).toHaveText("Dropped!");
     }
 

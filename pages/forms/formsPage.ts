@@ -1,6 +1,7 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { BasePage } from "../basePage";
 import path from "node:path";
+
 export class FormsPage extends BasePage {
 
     private readonly firstNameInput: Locator;
@@ -27,8 +28,8 @@ export class FormsPage extends BasePage {
         this.adressInput = page.locator("#currentAddress");
         this.autoFillSubject = page.locator("#subjectsInput");
         this.submitButton = page.locator("#submit");
-        this.selectStateTextField = page.getByText("Select State");
-        this.selectCityTextField = page.getByText("Select City");
+        this.selectStateTextField = page.locator("#react-select-3-placeholder");
+        this.selectCityTextField = page.locator("#city");
         this.dateOfBirthInput = page.locator("#dateOfBirthInput");
         this.monthDatePicker = page.locator(".react-datepicker__month-select");
         this.yearDatePicker = page.locator(".react-datepicker__year-select");
@@ -72,7 +73,7 @@ export class FormsPage extends BasePage {
 
     private async fillAutocomplete(autoFillElement: Locator, text: string) {
         await autoFillElement.scrollIntoViewIfNeeded();
-        await super.clickElement(autoFillElement);
+        await autoFillElement.click({ force: true })
         await autoFillElement.pressSequentially(text, { delay: 10 })
         await this.page.keyboard.press('Enter')
 

@@ -7,7 +7,7 @@ export class SortablePage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.listElements = this.page.locator("#demo-tabpane-list > div > div");
+        this.listElements = this.page.locator("#demo-tabpane-list > div > div > div");
     }
 
     public async navigateSortablePage() {
