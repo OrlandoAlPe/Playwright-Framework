@@ -1,5 +1,5 @@
-import { test } from '../../fixtures/myFixtures';
-import studentsData from '../../data/formsPageData.json'
+import { test } from '../../fixtures/demoQAFixtures';
+import studentsData from '../../data/formsPageData.json';
 
 test('Forms & Uploads Suite', async ({ formsPage }) => {
 

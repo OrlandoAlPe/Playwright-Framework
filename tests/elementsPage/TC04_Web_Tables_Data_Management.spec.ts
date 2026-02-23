@@ -1,4 +1,4 @@
-import { test } from '../../fixtures/myFixtures';
+import { test } from '../../fixtures/demoQAFixtures';
 import webTablesData from "../../data/webTablesData.json"
 
 test('Web Tables Data Management', async ({ webTablesPage }) => {

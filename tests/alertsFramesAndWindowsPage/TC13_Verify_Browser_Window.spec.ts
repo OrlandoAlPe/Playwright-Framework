@@ -1,6 +1,4 @@
-
-import { test } from '../../fixtures/myFixtures';
-
+import { test } from '../../fixtures/demoQAFixtures';
 
 test('Verify Browser Windows  ', async ({ browerWindowsPage }) => {
 

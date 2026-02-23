@@ -1,4 +1,4 @@
-import { test } from '../../fixtures/myFixtures';
+import { test } from '../../fixtures/demoQAFixtures';
 
 test('Verify Sortable', async ({ sortablePage }) => {
 

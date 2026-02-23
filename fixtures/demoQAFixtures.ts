@@ -17,7 +17,7 @@ import { ToolTipsPage } from '../pages/widgets/toolTipsPage';
 import { SortablePage } from '../pages/interactions/sortablePage';
 import { DroppablePage } from '../pages/interactions/droppablePage';
 
-type MyFixtures = {
+type deemoQAFixtures = {
     textBoxPage: TextBoxPage;
     checkBoxPage: CheckBoxPage;
     radioButtonPage: RadioButtonPage;
@@ -37,7 +37,7 @@ type MyFixtures = {
     droppablePage: DroppablePage;
 };
 
-export const test = base.extend<MyFixtures>({
+export const test = base.extend<deemoQAFixtures>({
 
     radioButtonPage: async ({ page }, use) => {
         await use(new RadioButtonPage(page));

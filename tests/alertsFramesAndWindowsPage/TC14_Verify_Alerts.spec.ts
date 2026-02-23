@@ -1,4 +1,5 @@
-import { test } from '../../fixtures/myFixtures';
+import test from "@playwright/test";
+
 
 
 test('Verify Alerts', async ({ alertsPage }) => {

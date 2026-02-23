@@ -1,5 +1,4 @@
-import { test } from '../../fixtures/myFixtures';
-
+import { test } from '../../fixtures/demoQAFixtures';
 
 test('Verify Frames', async ({ framesPage, nestedFramesPage }) => {
 
