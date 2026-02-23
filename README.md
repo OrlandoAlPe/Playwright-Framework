@@ -14,6 +14,7 @@ This project is a high-level automation framework built with Playwright and Type
 + Data-Driven Testing: Test data managed via JSON files to decouple logic from input values.
 + Advanced Interactions: Custom handling for complex UI components like Drag & Drop, Nested Frames, and Multi-level Menus.
 + Stability: Implementation of Web-First Assertions and smart waiting strategies to eliminate flakiness.
++ Parallel execution for faster CI/CD
 ---
 
 <h1>🛠️ Tech Stack</h1>
