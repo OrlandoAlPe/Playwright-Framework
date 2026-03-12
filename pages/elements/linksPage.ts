@@ -1,6 +1,5 @@
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "../basePage";
-import { promises } from "dns";
 
 export class LinksPage extends BasePage {
 
